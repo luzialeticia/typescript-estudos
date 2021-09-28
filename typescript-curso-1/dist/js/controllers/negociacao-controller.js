@@ -15,5 +15,12 @@ export class NegociacaoController {
     adiciona() {
         const negociacao = this.criaNegociacao();
         console.log(negociacao);
+        this.limparFormulario();
+    }
+    limparFormulario() {
+        this.inputData.value = '';
+        this.inputQuantidade.value = '';
+        this.inputValor.value = '';
+        this.inputData.focus();
     }
 }
